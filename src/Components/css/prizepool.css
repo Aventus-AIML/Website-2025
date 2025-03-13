@@ -1,0 +1,97 @@
+.prize-pool-section {
+  padding: 4rem 0;
+  background: transparent;
+  position: relative;
+  z-index: 2;
+}
+
+.prize-pool-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 1rem;
+  padding: 2rem;
+  backdrop-filter: var(--glass-effect);
+  box-shadow: var(--shadow-glow);
+  transition: all 0.3s ease;
+}
+
+.prize-pool-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(8, 218, 34, 0.3);
+}
+
+.prize-pool-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.prize-amount {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.currency {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
+.amount {
+  font-size: 4rem;
+  color: white;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.lakhs {
+  font-size: 2rem;
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .prize-pool-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .currency {
+    font-size: 2rem;
+  }
+
+  .amount {
+    font-size: 3.5rem;
+  }
+
+  .lakhs {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .prize-pool-content {
+    padding: 1.5rem;
+  }
+
+  .prize-pool-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .currency {
+    font-size: 1.8rem;
+  }
+
+  .amount {
+    font-size: 3rem;
+  }
+
+  .lakhs {
+    font-size: 1.5rem;
+  }
+} 

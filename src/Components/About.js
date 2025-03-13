@@ -6,7 +6,7 @@ import "./css/about.css";
 export default function About() {
   const [time, setTime] = useState({});
   useEffect(() => {
-    let date = new Date("May 18, 2024 09:00:00").getTime();
+    let date = new Date("May 18, 2025 09:00:00").getTime();
     setInterval(function () {
       let now = new Date().getTime();
       let dist = date - now;
@@ -66,19 +66,19 @@ export default function About() {
         <div className="t">Time left for awesomeness</div>
         <div className="time">
           <div className="days cele glass">
-            <p className="celep">{0}</p>
+            <p className="celep">{time.days || 0}</p>
             <span className="celep">Days</span>
           </div>
           <div className="hours cele glass">
-            <p className="celep">{0}</p>
+            <p className="celep">{time.hours || 0}</p>
             <span className="celep">Hours</span>
           </div>
           <div className="minutes cele glass">
-            <p className="celep">{0}</p>
+            <p className="celep">{time.minutes || 0}</p>
             <span className="celep">Minutes</span>
           </div>
           <div className="seconds cele glass">
-            <p className="celep">{0}</p>
+            <p className="celep">{time.seconds || 0}</p>
             <span className="celep">Seconds</span>
           </div>
         </div>

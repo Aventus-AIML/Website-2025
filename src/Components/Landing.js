@@ -80,7 +80,7 @@ function Landing() {
           <div className="event-details" data-aos="fade-up" data-aos-delay="800">
             <div className="date-badge">
               <span className="date-icon">📅</span>
-              <span>10th - 11th May 2024</span>
+              <span>10th - 11th May 2025</span>
             </div>
             <div className="event-type">24 Hour Hackathon</div>
           </div>

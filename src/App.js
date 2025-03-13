@@ -62,9 +62,7 @@ function App() {
                 </div>
                 {/* <div>
                     <CommunityColab />
-                </div> */}
-                <div className='ps'>
-                    <ProblemStatement />
+                // </div> */}
                 </div>
                 <div className="glimpse"
                     style={{

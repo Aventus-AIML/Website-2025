@@ -63,7 +63,6 @@ function App() {
                 {/* <div>
                     <CommunityColab />
                 // </div> */}
-                </div>
                 <div className="glimpse"
                     style={{
                         display: 'flex',

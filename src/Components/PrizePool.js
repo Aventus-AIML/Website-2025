@@ -8,7 +8,7 @@ const PrizePool = () => {
         <h2>Prize Pool</h2>
         <div className="prize-amount">
           <span className="currency">₹</span>
-          <span className="amount">3 </span>
+          <span className="amount">3.0</span>
           <span className="lakhs">Lakhs</span>
         </div>
       </div>

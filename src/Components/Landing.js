@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./css/landing.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import PrizePool from "./PrizePool";
 import {
   faInstagram,
   faLinkedin,
@@ -161,6 +162,9 @@ function Landing() {
           <h2>Dayananda Sagar College of Engineering</h2>
           <h3>Department of Artificial Intelligence & Machine Learning</h3>
         </div>
+      </div>
+      <div>
+        <PrizePool />
       </div>
     </div>
   );

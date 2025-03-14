@@ -22,14 +22,14 @@ function App() {
 
   return (
     <>
-    {/*  <Nav /> */}
+      {/*  <Nav /> */}
       <div className="conta">
         <div>
           <Landing />
         </div>
-        <div>
+        {/* <div>
           <PrizePool />
-        </div>
+        </div> */}
         <div>
           <About />
         </div>

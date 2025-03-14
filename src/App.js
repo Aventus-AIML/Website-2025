@@ -22,7 +22,7 @@ function App() {
 
   return (
     <>
-      <Nav />
+    {/*  <Nav /> */}
       <div className="conta">
         <div>
           <Landing />

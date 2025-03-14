@@ -157,7 +157,7 @@ function Landing() {
       {/* Welcome message without AOS animations */}
       <div className="presented-by">
         <div className="presented-content">
-          <span>Welcome to</span>
+          <span>Powered by</span>
           <h2>Dayananda Sagar College of Engineering</h2>
           <h3>Department of Artificial Intelligence & Machine Learning</h3>
         </div>

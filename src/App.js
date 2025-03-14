@@ -1,6 +1,5 @@
 import React from "react";
 import Landing from "./Components/Landing";
-import Nav from "./Components/Nav";
 import Sponsors from "./Components/Sponsors";
 import Tracks from "./Components/Tracks";
 import About from "./Components/About";
@@ -13,7 +12,6 @@ import image5 from "./images/5.png";
 import "./App.css";
 import Map from "./Components/map.js";
 import IndividualSponsor from "./Components/Individualsponsors.js";
-import PrizePool from "./Components/PrizePool";
 import Faqs from "./Components/Faqs";
 import ContactUs from "./Components/ContactUs";
 

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./css/landing.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PrizePool from "./PrizePool";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
   faLinkedin,
@@ -37,6 +37,15 @@ function Landing() {
     bg.setColors([0x00a69e, 0x00ff51]);
     bg.three.camera.position.set(0, 0, 250);
 
+    // Add resize handler to update background on window resize
+    const handleResize = () => {
+      if (bg && bg.three && bg.three.renderer) {
+        bg.three.renderer.setSize(effect.offsetWidth, effect.offsetHeight);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
     // Devfolio script
     const script = document.createElement("script");
     script.src = "https://apply.devfolio.co/v2/sdk.js";
@@ -46,7 +55,7 @@ function Landing() {
 
     return () => {
       document.body.removeChild(script);
-      // AOS.refresh();
+      window.removeEventListener("resize", handleResize);
       effect.remove();
     };
   }, []);
@@ -54,7 +63,7 @@ function Landing() {
   return (
     <div id="landing-main" data-section-name="s-one">
       {/* Added a navbar-spacer div */}
-      <div className="navbar-spacer"></div>
+      {/* <div className="navbar-spacer"></div> */}
 
       <div className="lcontent">
         <div className="lleft" data-aos="fade-right" data-aos-delay="200">
@@ -163,6 +172,7 @@ function Landing() {
           <h3>Department of Artificial Intelligence & Machine Learning</h3>
         </div>
       </div>
+
       <div>
         <PrizePool />
       </div>

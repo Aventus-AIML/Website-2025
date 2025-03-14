@@ -33,15 +33,16 @@ const PrizePool = () => {
             <div className="prize-features">
               <div className="feature-item">
                 <span className="feature-icon">🏆</span>
-                <span className="feature-text">Substantial Cash Prizes</span>
+                <span className="feature-text">Attractive Cash Prizes</span>
               </div>
               <div className="feature-item">
                 <span className="feature-icon">💼</span>
-                <span className="feature-text">Internship Opportunities</span>
+                <span className="feature-text">Internship (maybe)</span>
+                {/* <span className="feature-text"> (maybe)</span>  */}
               </div>
               <div className="feature-item">
                 <span className="feature-icon">🚀</span>
-                <span className="feature-text">Mentorship Programs</span>
+                <span className="feature-text">Mentorship Opportunities</span>
               </div>
             </div>
 
